@@ -1,0 +1,19 @@
+{
+  "routes": [
+    "/about",
+    "/assignment",
+    "/book-link",
+    "/contact",
+    "/courses",
+    "/discussion-forum",
+    "/doubt-section",
+    "/events-announcements",
+    "/feedback",
+    "/liveclass",
+    "/login",
+    "/messaging",
+    "/payment",
+    "/register",
+    "/scholarship"
+  ]
+}

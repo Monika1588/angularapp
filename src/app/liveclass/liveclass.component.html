@@ -1,0 +1,25 @@
+<h2 class="headline">Live Classes</h2>
+<div class="videos-container">
+  <!-- Video Player Section -->
+  <div class="video-player-container" *ngIf="selectedVideo">
+    <h3>{{ selectedVideo.subject }} - {{ selectedVideo.duration }} minutes</h3>
+    <video controls class="video-player">
+      <source [src]="selectedVideo.url" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-description">
+      <p>{{ selectedVideo.description }}</p>
+      <span *ngIf="selectedVideo.isLive" class="live-tag">LIVE</span>
+    </div>
+  </div>
+
+  <!-- Course List Section -->
+  <div class="course-list">
+    <h3>Available Courses</h3>
+    <div class="course-item" *ngFor="let course of courses" (click)="selectVideo(course)">
+      <h4>{{ course.name }}</h4>
+      <p>{{ course.syllabus }}</p>
+      <button (click)="watchLater(course)">Watch Later</button>
+    </div>
+  </div>
+</div>

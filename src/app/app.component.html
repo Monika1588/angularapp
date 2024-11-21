@@ -1,0 +1,75 @@
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-container">
+      <a routerLink="/" class="navbar-logo">Academy</a>
+      
+      <ul class="navbar-menu">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+        <li><a routerLink="/scholarship">Scholarship</a></li>
+        <li><a routerLink="/login">Login</a></li>
+        <li><a routerLink="/feedback">Feedback</a></li>
+        <li><a routerLink="/book-link">Books</a></li>
+        <li><a routerLink="/events-announcements">Events-Announcements</a></li>
+        <li><a routerLink="/messaging">Messaging</a></li>
+        <li><a routerLink="/discussion-forum">Discussion-Forum</a></li>
+        <li><a routerLink="/doubt-section">Doubt-Section</a></li>
+      </ul> 
+    
+  
+      <div class="search-container">
+        <input type="text" placeholder="Search..." [(ngModel)]="searchTerm" />
+        <button (click)="search()">Search</button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Navbar (assuming it's already added) -->
+
+<!-- Welcome Headline -->
+<div class="welcome-container">
+  <h1 class="welcome-heading">Welcome to Unique Tuition Classes</h1>
+  <p class="welcome-subheading">Your gateway to quality learning!</p>
+</div>
+
+<!-- Other page content -->
+
+  <!-- Main content rendered by Angular's router -->
+  <router-outlet></router-outlet>
+  
+
+
+<app-your-component></app-your-component>
+<br>
+
+<app-courses></app-courses>
+<br>
+
+<app-liveclass></app-liveclass>
+<br>
+
+<app-payment></app-payment>
+<br>
+
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-content">
+    <h3 class="footer-title">About Our Tuition Class</h3>
+    <p>Providing quality education for students to excel in their academic journey.</p>
+    <p><strong>Address:</strong> 123 Learning St, Knowledge City, Education State, 12345</p>
+    <div class="social-media">
+      <h4>Follow Us:</h4>
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      <a href="https://www.twitter.com" target="_blank">Twitter</a>
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<!-- src/app/app.component.html -->
+<h1>Welcome to the Academy</h1>
+<app-doubt-section></app-doubt-section>

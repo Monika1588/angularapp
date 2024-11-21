@@ -1,0 +1,80 @@
+.tuition-container {
+  max-width: 600px; /* Maximum width of the container */
+  margin: 20px auto; /* Centering the container */
+  padding: 20px; /* Padding around the container */
+  border: 1px solid #ccc; /* Border around the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  background-color: #f9f9f9; /* Light background */
+}
+
+.headline {
+  text-align: center; /* Centered headline */
+  color: #333; /* Dark color for the headline */
+  font-size: 24px; /* Font size for the headline */
+  margin-bottom: 10px; /* Margin below the headline */
+}
+
+.form-header {
+  font-weight: bold; /* Bold font for the form header */
+  margin: 10px 0; /* Margin above and below the header */
+  text-align: center; /* Center the header */
+  color: #007BFF; /* Highlight color */
+}
+
+.payment-history-header {
+  font-weight: bold; /* Bold font for the payment history header */
+  margin-top: 20px; /* Margin above the header */
+}
+
+.payment-form {
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Column layout */
+}
+
+label {
+  margin: 10px 0 5px; /* Margin for labels */
+  font-weight: 600; /* Bold labels */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 10px; /* Padding for inputs */
+  border: 1px solid #ccc; /* Border for inputs */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.payment-methods {
+  margin: 10px 0; /* Margin for payment methods */
+}
+
+button {
+  margin-top: 15px; /* Margin above the button */
+  padding: 10px; /* Padding for the button */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #007BFF; /* Button color */
+  color: white; /* Text color */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Transition effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.payment-history {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.payment-history li {
+  padding: 5px 0; /* Padding for each list item */
+}
+
+.date {
+  color: gray; /* Color for the date */
+  font-size: 0.9em; /* Slightly smaller font */
+}

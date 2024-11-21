@@ -1,0 +1,52 @@
+/* src/app/discussion-forum/discussion-forum.component.css */
+.forum-container {
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .posts {
+    margin-bottom: 15px;
+  }
+  
+  .post {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .post-author {
+    font-size: 0.8em;
+    color: #7f8c8d;
+  }
+  
+  .post-input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post-input input, .post-input textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .post-input button {
+    padding: 10px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .post-input button:hover {
+    background-color: #3498db;
+  }
+  

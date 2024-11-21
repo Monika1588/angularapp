@@ -1,0 +1,27 @@
+<!-- src/app/events-announcements/events-announcements.component.html -->
+<div class="events-announcements-container">
+    <h1>Events & Announcements</h1>
+  
+    <section class="events-section">
+      <h2>Upcoming Events</h2>
+      <div *ngFor="let event of events; let i = index" class="event-card" (click)="toggleEvent(i)">
+        <h3>{{ event.title }} <span class="event-date">{{ event.date }}</span></h3>
+        <p>{{ event.description }}</p>
+        <div *ngIf="selectedEventIndex === i" class="event-details">
+          <p>{{ event.details }}</p>
+        </div>
+      </div>
+    </section>
+  
+    <section class="announcements-section">
+      <h2>Announcements</h2>
+      <div *ngFor="let announcement of announcements; let i = index" class="announcement-card" (click)="toggleAnnouncement(i)">
+        <h3>{{ announcement.title }} <span class="announcement-date">{{ announcement.date }}</span></h3>
+        <p>{{ announcement.content }}</p>
+        <div *ngIf="selectedAnnouncementIndex === i" class="announcement-details">
+          <p>{{ announcement.details }}</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  

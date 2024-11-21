@@ -1,0 +1,19 @@
+<!-- src/app/book-list/book-list.component.html -->
+<div class="book-list-container">
+    <h2>Free Learning Books</h2>
+    <div class="book-grid">
+      <div class="book-card" *ngFor="let book of books">
+        <img [src]="book.coverImage" alt="{{ book.title }} cover" class="book-cover" />
+        <h3>{{ book.title }}</h3>
+        <p><strong>Author:</strong> {{ book.author }}</p>
+        <p>{{ book.description }}</p>
+        <a 
+          [href]="book.pdfUrl" 
+          class="btn btn-download" 
+          (click)="showDownloadPopup(book.title)" 
+          download
+        >Download PDF</a>
+      </div>
+    </div>
+  </div>
+  

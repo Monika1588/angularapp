@@ -1,0 +1,14 @@
+<!-- src/app/doubt-section/doubt-section.component.html -->
+<div class="doubt-section">
+    <h2>💬 Ask Your Doubt</h2>
+    <textarea [(ngModel)]="question" placeholder="Type your question here..." rows="4"></textarea>
+    <button (click)="submitDoubt()">Submit</button>
+    
+    <p class="error-message" *ngIf="errorMessage">{{ errorMessage }}</p>
+  
+    <h3>📝 Previously Asked Doubts</h3>
+    <ul>
+      <li *ngFor="let doubt of doubts">{{ doubt.question }}</li>
+    </ul>
+  </div>
+  

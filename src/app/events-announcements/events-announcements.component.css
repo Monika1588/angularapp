@@ -1,0 +1,45 @@
+/* src/app/events-announcements/events-announcements.component.css */
+.events-announcements-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  h2 {
+    color: #2980b9;
+    margin-top: 30px;
+  }
+  
+  .event-card, .announcement-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .event-card:hover, .announcement-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-date, .announcement-date {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    float: right;
+  }
+  
+  .event-details, .announcement-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+  }
+  

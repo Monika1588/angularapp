@@ -1,0 +1,16 @@
+<!-- src/app/discussion-forum/discussion-forum.component.html -->
+<div class="forum-container">
+    <h2>Discussion Forum</h2>
+    <div class="posts">
+      <div *ngFor="let post of posts" class="post">
+        <h3>{{ post.title }} <small class="post-author">{{ post.author }} - {{ post.timestamp | date:'short' }}</small></h3>
+        <p>{{ post.content }}</p>
+      </div>
+    </div>
+    <div class="post-input">
+      <input [(ngModel)]="newPostTitle" placeholder="Post Title" />
+      <textarea [(ngModel)]="newPostContent" placeholder="Type your post content..."></textarea>
+      <button (click)="addPost()">Add Post</button>
+    </div>
+  </div>
+  
